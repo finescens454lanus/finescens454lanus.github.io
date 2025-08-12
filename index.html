@@ -5,78 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CENS 454 · Educación para Adultos</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Estilos básicos y menú hamburguesa */
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #004d40;
-      color: white;
-      padding: 1em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .menu-toggle {
-      font-size: 1.5em;
-      cursor: pointer;
-      display: none;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1em;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
-      nav ul {
-        flex-direction: column;
-        display: none;
-        background-color: #004d40;
-        padding: 1em;
-      }
-      nav ul.active {
-        display: flex;
-      }
-    }
-    section {
-      padding: 2em;
-      max-width: 900px;
-      margin: auto;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 1em;
-    }
-    .contacto {
-      background-color: #e0f2f1;
-      padding: 1em;
-      border-radius: 8px;
-    }
-    .persona {
-      margin-bottom: 1em;
-    }
-  </style>
 </head>
 <body>
 
   <header>
     <h1>CENS 454 · Lanús</h1>
-    <div class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">☰</div>
+    <div class="menu-toggle">☰</div>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -123,20 +57,13 @@
         📧 ana.torres@cens454.edu.ar<br>
         📞 11 1122 3344
       </div>
-      <!-- Podés agregar más personas acá -->
     </div>
   </section>
 
-  <footer style="text-align:center; padding:1em; background:#004d40; color:white;">
+  <footer>
     © 2025 · CENS 454 · Lanús · Educación para Adultos
   </footer>
 
-  <script>
-    // Menú hamburguesa
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-      document.querySelector('nav ul').classList.toggle('active');
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
